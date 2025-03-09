@@ -11,6 +11,25 @@ npm start
 
 Open a socket connection using a tool of your choice (e.g. PuTTY) and start sending commands.
 
+### Commands
+
+#### Data Modification Commands
+Data Modification Commands can be issued individually or as a part of a transaction.
+
+PUT [key] [value]
+
+GET [key]
+
+DEL [key]
+
+#### Transaction Control Commands
+
+START
+
+COMMIT
+
+ROLLBACK
+
 ### Technical explanation
 
 - Commands made during a transaction are logged to `transactions` to be processed when a subsequent COMMIT is executed.
