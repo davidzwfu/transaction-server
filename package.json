@@ -1,0 +1,12 @@
+{
+  "name": "transaction-server",
+  "version": "1.0.0",
+  "description": "An in-memory key/value datastore server that supports transactions.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Fu",
+  "license": "ISC"
+}
