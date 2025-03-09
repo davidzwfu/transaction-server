@@ -13,8 +13,7 @@ Open a socket connection using a tool of your choice (e.g. PuTTY) and start send
 
 ### Commands
 
-#### Data Modification Commands
-Data Modification Commands can be issued individually or as a part of a transaction.
+##### Data Modification Commands
 
 PUT [key] [value]
 
@@ -22,7 +21,7 @@ GET [key]
 
 DEL [key]
 
-#### Transaction Control Commands
+##### Transaction Control Commands
 
 START
 
