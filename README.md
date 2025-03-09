@@ -1,4 +1,4 @@
-### Setup
+## Setup
 
 Download and install [Node.js](https://nodejs.org/en/download).
 
@@ -11,7 +11,7 @@ npm start
 
 Open a socket connection using a tool of your choice (e.g. PuTTY) and start sending commands.
 
-### Commands
+## Commands
 
 ##### Data Modification Commands
 
@@ -29,7 +29,7 @@ COMMIT
 
 ROLLBACK
 
-### Technical explanation
+## Technical explanation
 
 - Commands made during a transaction are logged to `transactions` to be processed when a subsequent COMMIT is executed.
   - Transactions are atomic so modifications are made all at once
@@ -38,7 +38,7 @@ ROLLBACK
 - Values can be of type string, number, or json (parsed with `JSON.parse()`).
 - Transaction ids are determined by using the connected user's port (`socket.remotePort`).
 
-### Assumptions
+## Assumptions
 
 - Lock rows that are being accessed (GET, PUT, DEL) during a transaction
   - To prevent conflicts between multiple users accessing the same row
